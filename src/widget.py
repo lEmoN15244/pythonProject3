@@ -21,4 +21,10 @@ def mask_account_card() -> str:
     return result
 
 
-# print(mask_account_card())
+def get_date(user_date: str) -> str:
+    index_time = user_date.find("T")
+    date = user_date[:index_time]
+    year_month_day = date.split("-")
+    year_month_day.reverse()
+    date_right = ".".join(year_month_day)
+    return date_right
