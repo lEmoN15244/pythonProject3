@@ -1,11 +1,13 @@
-from src.widget import get_date, mask_account_card
+from src.widget import mask_account_card
 
 from src.processing import filter_by_state, sort_by_date
 
 operations = []
-user_list_operation =[]
+user_list_operation = []
 number = ""
-user_input = input("Введите какую операцию хотите выполнить? (максировка счета или карты/ сортировка операций/сортировка операций по дате)")
+user_input = input(
+    """Введите какую операцию хотите выполнить?
+    (максировка счета или карты/ сортировка операций/сортировка операций по дате)""")
 if user_input == "максировка счета или карты":
     print(mask_account_card())
 elif user_input == "сортировка операций по дате":
@@ -16,6 +18,4 @@ elif user_input == "сортировка операций":
     print(filter_by_state(operations))
 
 
-
 # print(get_date(user_input))
-

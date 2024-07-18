@@ -8,7 +8,7 @@ def mask_account_card() -> str:
     user_input = input("Введите номер счета или карты")
     user_input_splited = user_input.split()
     for part_input in user_input_splited:
-        if part_input.isdigit() == True:
+        if part_input.isdigit():
             user_input_number = part_input
         else:
             name_card_account.append(part_input)
