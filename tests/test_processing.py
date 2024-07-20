@@ -23,7 +23,8 @@ def test_filter_by_state_none(operation_list):
 
 
 def test_filter_by_state_none():
-    assert filter_by_state([]) == "Введите корректные значения"
+    none_list = []
+    assert filter_by_state(none_list) == "Введите корректные значения"
 
 
 def test_sort_by_date_t(operation_list):
