@@ -13,6 +13,7 @@ def get_mask_card_number(card_number: str) -> str:
     else:
         return "Введите корректный номер карты"
 
+
 # print(get_mask_card_number("7000792289606361"))
 def get_mask_account(account: str) -> str:
     """Функция выводящая маску номера счета"""
